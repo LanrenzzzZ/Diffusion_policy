@@ -98,8 +98,8 @@
     diffusion_step_embed_dim: 128
     use_film_scale_modulation: True
     # Noise scheduler.
-    noise_scheduler_type: DDPM
-    num_train_timesteps: 100
+    noise_scheduler_type: DDIM
+    num_train_timesteps: 1000
     beta_schedule: squaredcos_cap_v2
     beta_start: 0.0001
     beta_end: 0.02
@@ -109,7 +109,7 @@
     clip_sample_range: 1.0
 
     # Inference
-    num_inference_steps: 100
+    num_inference_steps: 16
 
     # Loss computation
     do_mask_loss_for_padding: false
